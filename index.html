@@ -4,14 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try UsefulAwesomeNoteApp for free· Always find what you wrote · Enjoy the freedom of handwriting · Organize your notes better with cards.">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <link rel="canonical" href="https://github.com/mmirzaei559/note-app"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <title>Notes Management Web Application</title>
+    <title>Useful Awesome Note App</title>
 </head>
 <body>
-
-    <h1>it works ?</h1>
-    
+    <div class="container-fluid py-3">
+        <header>
+            <h1 class="delete-1">Notes</h1>
+        </header>
+        <article class="content-container">
+            <section aria-label="add new note" class="add-note-big-button bg-white justify-content-center align-items-center" data-toggle="modal" data-target="#add-edit-note">add note</section>
+            <section aria-label="note modal" class="modal fade" id="add-edit-note" data-modal-id="0">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Add/Edit Note</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form aria-label="create or edit notes">
+                                <div class="form-group">
+                                    <label class="col-form-label">Note Title</label>
+                                    <input id="noteTitle" aria-label="note title" name="title" type="text" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Subtitle</label>
+                                    <input id="subtitle" aria-label="note subtitle" name="subtitle" type="text" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Description</label>
+                                    <textarea id="description" aria-label="note description" name="description"  class="form-control"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="cancel" aria-label="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button id="save" aria-label="submit" type="button" class="btn btn-danger" data-dismiss="modal">Add task</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
