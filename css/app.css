@@ -1,0 +1,115 @@
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+.container-fluid {
+    min-height: inherit;
+    background: linear-gradient(48deg, #E8DBFC 0%, #F8F9D2 100%);
+}
+
+.add-note-big-button, .add-note-small-button {
+    cursor: pointer;
+    border-radius: 5px;
+    outline: 2px dashed lightgray;
+    outline-offset: -10px;
+}
+
+.add-note-big-button {
+    height: 90vh
+}
+
+.add-note-big-button img {
+    width: 35px;
+    margin-top: 5px;
+}
+
+.add-note-big-button h2 {
+    margin: 0 10px;
+}
+
+.note-card {
+    background: transparent !important;
+}
+
+.note-card .box {
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.note-card {
+    cursor: pointer;
+    height: 300px;
+}
+
+#card-details .dropdown-menu,
+.note-card .dropdown-menu {
+    top: -15px !important;
+    left: -144px !important;
+    padding: 0;
+    cursor: pointer;
+}
+
+#card-details .dropup img {
+    cursor: pointer;
+}
+
+#card-details .dropdown-menu img,
+.note-card .dropdown-menu img {
+    width: 10px;
+    margin: 0 5px;
+}
+
+.note-card .dropdown-menu > div {
+    padding: 3px;
+}
+
+.note-card .dropdown-menu-item {
+    border-bottom: 1px solid lightgray;
+}
+
+.note-card .card-title, .card-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 77px;
+}
+
+.note-card .card-footer > img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+#card-details > :first-child {
+    padding: 15px;
+}
+
+#card-details .card {
+    background: #101828;
+    color: white;
+}
+
+#card-details .card .card-header {
+    border-bottom: 1px solid #28303e;
+}
+
+#card-details .card .card-header small:nth-child(1) {
+    width: 95%;
+}
+
+#card-details .card .card-header small:nth-child(2) {
+    cursor: pointer;
+}
+
+#card-details .card .card-body hr {
+    background: #28303e;
+    margin: 25px 0;
+}
+
+#card-details .card .card-body pre {
+    color: white;
+}
+
+#card-details img[alt="calendar"] {
+    width: 14px;
+    margin-right: 5px;
+}
